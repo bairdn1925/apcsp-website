@@ -1,4 +1,78 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>new page</title>
+	<title>linux help</title>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0lax">Name</th>
+    <th class="tg-0lax">Synopsis/Syntax</th>
+    <th class="tg-0lax">Description</th>
+    <th class="tg-0lax">Example</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">echo</td>
+    <td class="tg-0lax">echo [SHORT-OPTION]... [STRING]...<br><br>       echo LONG-OPTION</td>
+    <td class="tg-0lax">Repeats what you want to be</td>
+    <td class="tg-0lax">Echo hello<br><br>Repeats hello in the console</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">date</td>
+    <td class="tg-0lax">date [OPTION]... [+FORMAT]<br><br>       date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]</td>
+    <td class="tg-0lax">Gives the date and time today</td>
+    <td class="tg-0lax">Date<br><br>Tue 03 Dec 2019 12:21:26 PM PST</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">hostname</td>
+    <td class="tg-0lax">hostname  [-a|--alias] [-d|--domain] [-f|--fqdn|--long] [-A|--all-fqdns] [-i|--ip-address]<br><br>       [-I|--all-ip-addresses] [-s|--short] [-y|--yp|--nis]<br><br>       hostname [-b|--boot] [-F|--file filename] [hostname]<br><br>       hostname [-h|--help] [-V|--version]<br><br><br>       domainname [nisdomain] [-F file]<br><br>       ypdomainname [nisdomain] [-F file]<br><br>       nisdomainname [nisdomain] [-F file]<br><br><br>       dnsdomainname</td>
+    <td class="tg-0lax">Displays your hostname in console</td>
+    <td class="tg-0lax">Hostname <br><br>rpi02</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">who</td>
+    <td class="tg-0lax">who [OPTION]... [ FILE | ARG1 ARG2 ]</td>
+    <td class="tg-0lax">Displays users on the pi</td>
+    <td class="tg-0lax">Who <br><br>sp1a     pts/0        2019-12-03 11:51 (172.19.32.30)<br><br>sp1b     pts/1        2019-12-03 11:58 (172.19.32.47)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">clear</td>
+    <td class="tg-0lax">clear [-Ttype] [-V] [-x]</td>
+    <td class="tg-0lax">Clears console</td>
+    <td class="tg-0lax">clear</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">cal</td>
+    <td class="tg-0lax">cal [-31jy] [-A number] [-B number] [-d yyyy-mm] [[month] year]<br><br>     cal [-31j] [-A number] [-B number] [-d yyyy-mm] -m month [year]<br><br>     ncal [-C] [-31jy] [-A number] [-B number] [-d yyyy-mm] [[month] year]<br><br>     ncal [-C] [-31j] [-A number] [-B number] [-d yyyy-mm] -m month [year]<br><br>     ncal [-31bhjJpwySM] [-A number] [-B number] [-H yyyy-mm-dd] [-d yyyy-mm] [-s country_code]<br><br>         [[month] year]<br><br>     ncal [-31bhJeoSM] [-A number] [-B number] [-d yyyy-mm] [year]</td>
+    <td class="tg-0lax">Displays calendar for given year or month</td>
+    <td class="tg-0lax">Cal 5 2000<br><br>  May 2000        <br><br>Su Mo Tu We Th Fr Sa  <br><br>    1  2  3  4  5  6  <br><br> 7  8  9 10 11 12 13  <br><br>14 15 16 17 18 19 20  <br><br>21 22 23 24 25 26 27  <br><br>28 29 30 31</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">yes</td>
+    <td class="tg-0lax">yes [STRING]...<br><br>       yes OPTION</td>
+    <td class="tg-0lax">Continuously displays entered text</td>
+    <td class="tg-0lax">Yes please<br><br>Please<br><br>Please<br><br>Please<br><br>Please</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">ls</td>
+    <td class="tg-0lax">ls [OPTION]... [FILE]...</td>
+    <td class="tg-0lax">Displays files for your user</td>
+    <td class="tg-0lax">ls<br>bairdn1925  hello  hey  sp1a@rpi08  testuser@rpi30  testuser@rpi30~  tmp  tmp2<br></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">cat</td>
+    <td class="tg-0lax">cat [OPTION]... [FILE]...</td>
+    <td class="tg-0lax">Reads out the file selected</td>
+    <td class="tg-0lax">Cat bairdn1925</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">history</td>
+    <td class="tg-0lax">history</td>
+    <td class="tg-0lax">Displays the history of past commands</td>
+    <td class="tg-0lax">history</td>
+  </tr>
+</table>
